@@ -1,0 +1,56 @@
+/* all of this is done for the phone view of teh webpage */
+header {
+  background-color: darkblue;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  color: white;
+  font-size: 52px;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+header nav ul li a {
+  font-family: montserrat;
+  color: white;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  header h1 {
+    margin: 20px;
+    padding: 0;
+  }
+
+  header nav {
+    margin: 20px;
+  }
+
+  header nav ul li a:hover {
+    color: grey;
+  }
+}
